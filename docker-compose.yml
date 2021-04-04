@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  compiler:
+    image: compilerbook
+    volumes:
+      - ./9cc:/9cc
+    working_dir: /9cc
+    stdin_open: true # docker run -i
+    tty: true
